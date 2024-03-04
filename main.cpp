@@ -9,18 +9,13 @@ double operator+(int number, const Fraction& fraction){
 
 int main(){
     Fraction fraction1 = Fraction(1, 2);
-    Fraction fraction2 = Fraction(2, 3);
+    Fraction fraction2 = Fraction(3, 2);
     Fraction res1 = fraction1 + 5;
     double res2 = 5 + fraction1;
     double res3 = fraction1 + 5;
 
-    if(fraction2 == fraction1++){
-        std::cout << "YES" << std::endl;
-        std::cout << fraction1 << std::endl;
-    } 
-    else std::cout << "NO" << std::endl;
-
     Complex x1 = Complex(fraction1, fraction2);
+    SLU2();
     // Complex x2 = Complex(x1);
     // x2 = x1;
     // std::cout << x1 << std::endl;

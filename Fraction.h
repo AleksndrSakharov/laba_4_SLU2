@@ -11,8 +11,29 @@ private:
 public:
     Fraction();
 
-    Fraction(double num){
-
+    Fraction(double Res){
+        if (Res == 0){
+            _denominator = 1;
+            _numerator = 0;
+        }else{
+            int32_t flag = 1;
+            if (Res < 0){
+                flag = -1;
+                Res *= flag;
+            }
+            uint32_t denom = 1;
+            int16_t count = 0;
+            while (fmod(Res, 1) != 0 && count < 15){
+                Res *= 10;
+                count++;
+            }
+            denom = pow(10, count);
+            Res *= flag;
+            _numerator = Res;
+            _denominator = denom;
+            MethodSocr(); 
+            }
+        
     };
 
     Fraction(int32_t numerator, uint32_t denominator){
@@ -27,6 +48,8 @@ public:
     }
 
     Fraction(const Fraction& fraction);
+
+    void MethodSocr();
 
     Fraction& operator=(const Fraction& tmp){
         // std::cout << "Call operator = " << std::endl;
@@ -72,65 +95,61 @@ public:
 
 
 
-    bool operator<(const Fraction& fraction)const{
-        if ((static_cast<double>(_numerator) / _denominator) < (static_cast<double>(fraction._numerator) / fraction._denominator))
-        return true;
-        else return false;
-    }
-    bool operator>(const Fraction& fraction)const{
-        if ((static_cast<double>(_numerator) / _denominator) > (static_cast<double>(fraction._numerator) / fraction._denominator))
-        return true;
-        else return false;
-    }
-    bool operator<=(const Fraction& fraction)const{
-        if ((static_cast<double>(_numerator) / _denominator) <= (static_cast<double>(fraction._numerator) / fraction._denominator))
-        return true;
-        else return false;
-    }
-    bool operator>=(const Fraction& fraction)const{
-        if ((static_cast<double>(_numerator) / _denominator) >= (static_cast<double>(fraction._numerator) / fraction._denominator))
-        return true;
-        else return false;
-    }
-    bool operator==(const Fraction& fraction)const{
-        if ((static_cast<double>(_numerator) / _denominator) == (static_cast<double>(fraction._numerator) / fraction._denominator))
-        return true;
-        else return false;
-    }
-    bool operator!=(const Fraction& fraction)const{
-        if ((static_cast<double>(_numerator) / _denominator) != (static_cast<double>(fraction._numerator) / fraction._denominator))
-        return true;
-        else return false;
-    }
-    Fraction& operator++(){
-        this->_numerator++;
-        this->_denominator++;
-        return *this;
-    }
-    Fraction& operator--(){
-        this->_numerator--;
-        this->_denominator--;
-        return *this;
-    }
-    Fraction operator++(int32_t x){
-        Fraction result(*this);
-        this->_numerator++;
-        this->_denominator++;
-        return result;
-    }
-    Fraction operator--(int32_t x){
-        Fraction result(*this);
-        this->_numerator--;
-        this->_denominator--;
-        return result;
-    }
-    Fraction operator^(const Fraction& fraction)const{
-        int32_t new_numerator = pow(fraction._numerator, 2); 
-        uint32_t new_denominator = pow(fraction._denominator, 2);
+    // bool operator<(const Fraction& fraction)const{
+    //     if ((static_cast<double>(_numerator) / _denominator) < (static_cast<double>(fraction._numerator) / fraction._denominator))
+    //     return true;
+    //     else return false;
+    // }
+    // bool operator>(const Fraction& fraction)const{
+    //     if ((static_cast<double>(_numerator) / _denominator) > (static_cast<double>(fraction._numerator) / fraction._denominator))
+    //     return true;
+    //     else return false;
+    // }
+    // bool operator<=(const Fraction& fraction)const{
+    //     if ((static_cast<double>(_numerator) / _denominator) <= (static_cast<double>(fraction._numerator) / fraction._denominator))
+    //     return true;
+    //     else return false;
+    // }
+    // bool operator>=(const Fraction& fraction)const{
+    //     if ((static_cast<double>(_numerator) / _denominator) >= (static_cast<double>(fraction._numerator) / fraction._denominator))
+    //     return true;
+    //     else return false;
+    // }
+    // bool operator==(const Fraction& fraction)const{
+    //     if ((static_cast<double>(_numerator) / _denominator) == (static_cast<double>(fraction._numerator) / fraction._denominator))
+    //     return true;
+    //     else return false;
+    // }
+    // bool operator!=(const Fraction& fraction)const{
+    //     if ((static_cast<double>(_numerator) / _denominator) != (static_cast<double>(fraction._numerator) / fraction._denominator))
+    //     return true;
+    //     else return false;
+    // }
+    // Fraction& operator++(){
+    //     this->_numerator += this->_denominator; 
+    //     return *this;
+    // }
+    // Fraction& operator--(){
+    //     this->_numerator -= this->_denominator; 
+    //     return *this;
+    // }
+    // Fraction operator++(int32_t x){
+    //     Fraction result(*this);
+    //     this->_numerator += this->_denominator; 
+    //     return result;
+    // }
+    // Fraction operator--(int32_t x){
+    //     Fraction result(*this);
+    //     this->_numerator -= this->_denominator; 
+    //     return result;
+    // }
+    // Fraction operator^(const Fraction& fraction)const{
+    //     int32_t new_numerator = pow(fraction._numerator, 2); 
+    //     uint32_t new_denominator = pow(fraction._denominator, 2);
         
-        Fraction result = Fraction(new_numerator, new_denominator);
-        return result;
-    }
+    //     Fraction result = Fraction(new_numerator, new_denominator);
+    //     return result;
+    // }
     // Fraction operator-(const Fraction& fraction)const{
     //     int32_t new_numerator = fraction._numerator * (-1); 
     //     Fraction result = Fraction(new_numerator, fraction._denominator);

@@ -37,19 +37,19 @@ public:
 
     Complex operator/(const Complex &complex)const{
         Fraction new_re = (_re * complex._re + _im * complex._im) / (complex._im * complex._im + complex._re * complex._re);
-    Fraction new_im = (_im * complex._re - complex._im * _re) / (complex._im * complex._im + complex._re * complex._re);
-    return Complex (new_re, new_im) ;
+        Fraction new_im = (_im * complex._re - complex._im * _re) / (complex._im * complex._im + complex._re * complex._re);
+        return Complex (new_re, new_im);
     }
 
 
-    // friend std::ostream& operator<<(std::ostream &os, const Complex &complex)
-    // {
-    //     if (complex._im != 0){
-    //         os << complex._re;
-    //         if (complex._im > 0) os << "+";
-    //         os << complex._im << " * i";
-    //         return os;
-    //     }
-    //     else return os << complex._re;
-    // }
+    friend std::ostream& operator<<(std::ostream &os, const Complex &complex)
+    {
+        if (complex._im != 0){
+            os << complex._re;
+            if (complex._im > 0) os << "+";
+            os << complex._im << " * i";
+            return os;
+        }
+        else return os << complex._re;
+    }
 };
