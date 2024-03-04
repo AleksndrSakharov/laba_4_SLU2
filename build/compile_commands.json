@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/s23380346@unn.global/Sakharov/3823B1FI3/laba_4_SLU2/build",
+  "command": "/usr/bin/g++-12   -g -o CMakeFiles/main.dir/main.cpp.o -c /home/s23380346@unn.global/Sakharov/3823B1FI3/laba_4_SLU2/main.cpp",
+  "file": "/home/s23380346@unn.global/Sakharov/3823B1FI3/laba_4_SLU2/main.cpp"
+},
+{
+  "directory": "/home/s23380346@unn.global/Sakharov/3823B1FI3/laba_4_SLU2/build",
+  "command": "/usr/bin/g++-12   -g -o CMakeFiles/main.dir/Fraction.cpp.o -c /home/s23380346@unn.global/Sakharov/3823B1FI3/laba_4_SLU2/Fraction.cpp",
+  "file": "/home/s23380346@unn.global/Sakharov/3823B1FI3/laba_4_SLU2/Fraction.cpp"
+},
+{
+  "directory": "/home/s23380346@unn.global/Sakharov/3823B1FI3/laba_4_SLU2/build",
+  "command": "/usr/bin/g++-12   -g -o CMakeFiles/main.dir/Complex.cpp.o -c /home/s23380346@unn.global/Sakharov/3823B1FI3/laba_4_SLU2/Complex.cpp",
+  "file": "/home/s23380346@unn.global/Sakharov/3823B1FI3/laba_4_SLU2/Complex.cpp"
+},
+{
+  "directory": "/home/s23380346@unn.global/Sakharov/3823B1FI3/laba_4_SLU2/build",
+  "command": "/usr/bin/g++-12   -g -o CMakeFiles/main.dir/SLU2.cpp.o -c /home/s23380346@unn.global/Sakharov/3823B1FI3/laba_4_SLU2/SLU2.cpp",
+  "file": "/home/s23380346@unn.global/Sakharov/3823B1FI3/laba_4_SLU2/SLU2.cpp"
+}
+]
