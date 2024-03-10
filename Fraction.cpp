@@ -20,14 +20,20 @@ void Fraction::SetNumerator(int32_t new_numerator){
     _numerator = new_numerator;
 }
 
+void Fraction::SetSqrt(double new_sqrt){
+    _sqrt = new_sqrt;
+}
+
 Fraction::Fraction(){
     // std::cout << "Construct default" << std::endl;
+    _sqrt = 0;
     _numerator = 0;
     _denominator = 1;
 }
 
 Fraction::Fraction(const Fraction& fraction) {
     // std::cout << "Construct copy" << std::endl;
+    _sqrt = fraction._sqrt;
     _numerator = fraction._numerator;
     _denominator = fraction._denominator;
 }

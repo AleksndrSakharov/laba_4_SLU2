@@ -8,14 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/s23380346@unn.global/Sakharov/3823B1FI3/laba_4_SLU2/Complex.cpp" "CMakeFiles/main.dir/Complex.cpp.o" "gcc" "CMakeFiles/main.dir/Complex.cpp.o.d"
-  "/home/s23380346@unn.global/Sakharov/3823B1FI3/laba_4_SLU2/Fraction.cpp" "CMakeFiles/main.dir/Fraction.cpp.o" "gcc" "CMakeFiles/main.dir/Fraction.cpp.o.d"
-  "/home/s23380346@unn.global/Sakharov/3823B1FI3/laba_4_SLU2/SLU2.cpp" "CMakeFiles/main.dir/SLU2.cpp.o" "gcc" "CMakeFiles/main.dir/SLU2.cpp.o.d"
-  "/home/s23380346@unn.global/Sakharov/3823B1FI3/laba_4_SLU2/main.cpp" "CMakeFiles/main.dir/main.cpp.o" "gcc" "CMakeFiles/main.dir/main.cpp.o.d"
+  "D:/PROGA/Proga/C++/laba_4_SLU2/Complex.cpp" "CMakeFiles/main.dir/Complex.cpp.obj" "gcc" "CMakeFiles/main.dir/Complex.cpp.obj.d"
+  "D:/PROGA/Proga/C++/laba_4_SLU2/Fraction.cpp" "CMakeFiles/main.dir/Fraction.cpp.obj" "gcc" "CMakeFiles/main.dir/Fraction.cpp.obj.d"
+  "D:/PROGA/Proga/C++/laba_4_SLU2/SLU2.cpp" "CMakeFiles/main.dir/SLU2.cpp.obj" "gcc" "CMakeFiles/main.dir/SLU2.cpp.obj.d"
+  "D:/PROGA/Proga/C++/laba_4_SLU2/main.cpp" "CMakeFiles/main.dir/main.cpp.obj" "gcc" "CMakeFiles/main.dir/main.cpp.obj.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

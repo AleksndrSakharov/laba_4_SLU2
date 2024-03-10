@@ -1,22 +1,26 @@
 [
 {
-  "directory": "/home/s23380346@unn.global/Sakharov/3823B1FI3/laba_4_SLU2/build",
-  "command": "/usr/bin/g++-12   -g -o CMakeFiles/main.dir/main.cpp.o -c /home/s23380346@unn.global/Sakharov/3823B1FI3/laba_4_SLU2/main.cpp",
-  "file": "/home/s23380346@unn.global/Sakharov/3823B1FI3/laba_4_SLU2/main.cpp"
+  "directory": "D:/PROGA/Proga/C++/laba_4_SLU2/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   -g -std=gnu++1z -o CMakeFiles\\main.dir\\main.cpp.obj -c D:\\PROGA\\Proga\\C++\\laba_4_SLU2\\main.cpp",
+  "file": "D:/PROGA/Proga/C++/laba_4_SLU2/main.cpp",
+  "output": "CMakeFiles/main.dir/main.cpp.obj"
 },
 {
-  "directory": "/home/s23380346@unn.global/Sakharov/3823B1FI3/laba_4_SLU2/build",
-  "command": "/usr/bin/g++-12   -g -o CMakeFiles/main.dir/Fraction.cpp.o -c /home/s23380346@unn.global/Sakharov/3823B1FI3/laba_4_SLU2/Fraction.cpp",
-  "file": "/home/s23380346@unn.global/Sakharov/3823B1FI3/laba_4_SLU2/Fraction.cpp"
+  "directory": "D:/PROGA/Proga/C++/laba_4_SLU2/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   -g -std=gnu++1z -o CMakeFiles\\main.dir\\Fraction.cpp.obj -c D:\\PROGA\\Proga\\C++\\laba_4_SLU2\\Fraction.cpp",
+  "file": "D:/PROGA/Proga/C++/laba_4_SLU2/Fraction.cpp",
+  "output": "CMakeFiles/main.dir/Fraction.cpp.obj"
 },
 {
-  "directory": "/home/s23380346@unn.global/Sakharov/3823B1FI3/laba_4_SLU2/build",
-  "command": "/usr/bin/g++-12   -g -o CMakeFiles/main.dir/Complex.cpp.o -c /home/s23380346@unn.global/Sakharov/3823B1FI3/laba_4_SLU2/Complex.cpp",
-  "file": "/home/s23380346@unn.global/Sakharov/3823B1FI3/laba_4_SLU2/Complex.cpp"
+  "directory": "D:/PROGA/Proga/C++/laba_4_SLU2/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   -g -std=gnu++1z -o CMakeFiles\\main.dir\\Complex.cpp.obj -c D:\\PROGA\\Proga\\C++\\laba_4_SLU2\\Complex.cpp",
+  "file": "D:/PROGA/Proga/C++/laba_4_SLU2/Complex.cpp",
+  "output": "CMakeFiles/main.dir/Complex.cpp.obj"
 },
 {
-  "directory": "/home/s23380346@unn.global/Sakharov/3823B1FI3/laba_4_SLU2/build",
-  "command": "/usr/bin/g++-12   -g -o CMakeFiles/main.dir/SLU2.cpp.o -c /home/s23380346@unn.global/Sakharov/3823B1FI3/laba_4_SLU2/SLU2.cpp",
-  "file": "/home/s23380346@unn.global/Sakharov/3823B1FI3/laba_4_SLU2/SLU2.cpp"
+  "directory": "D:/PROGA/Proga/C++/laba_4_SLU2/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   -g -std=gnu++1z -o CMakeFiles\\main.dir\\SLU2.cpp.obj -c D:\\PROGA\\Proga\\C++\\laba_4_SLU2\\SLU2.cpp",
+  "file": "D:/PROGA/Proga/C++/laba_4_SLU2/SLU2.cpp",
+  "output": "CMakeFiles/main.dir/SLU2.cpp.obj"
 }
 ]
