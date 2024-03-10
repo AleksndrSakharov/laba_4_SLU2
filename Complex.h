@@ -25,8 +25,11 @@ public:
     friend std::ostream& operator<<(std::ostream &os, const Complex &complex)
     {
             os << complex._re;
-            if (complex._im > 0) return os << " + " << complex._im << " * i";
-            if (complex._im < 0) return os << " - " << -complex._im << " * i";
-            return os << " " << complex._im << " * i";
+            if (complex._im != 0 || (complex._im == 0 && complex._im.GetSqrt() != 0)){
+                if (complex._im > 0) return os << " + " << complex._im << " * i";
+                if (complex._im < 0) return os << " - " << -complex._im << " * i";
+            }
+            if (complex._im == 0 && complex._im.GetSqrt() == 0) return os;
+            return os << complex._im << " * i";
     }
 };

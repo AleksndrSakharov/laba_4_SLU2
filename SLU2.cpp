@@ -30,7 +30,6 @@ void SLU2::countAnswer(){
                 std::cout << "x2 = " << _x2 << std::endl;
             }
             else{
-                std::cout << "here" << std::endl;
                 _x1 = Complex(Fraction(-_b / (2.0 * _a)), Fraction(0, _d));
                 _x2 = Complex(Fraction(-_b / (2.0 * _a)), Fraction(0, -_d));
                 std::cout << "x1 = " << _x1 << " / " << 2.0 * _a << std::endl;
