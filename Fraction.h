@@ -76,6 +76,7 @@ public:
     void MethodSocr();
 
     Fraction& operator=(const Fraction& tmp){
+        _sqrt = tmp._sqrt;
         _numerator = tmp._numerator;
         _denominator = tmp._denominator;
         return *this;

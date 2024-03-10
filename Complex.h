@@ -27,6 +27,6 @@ public:
             os << complex._re;
             if (complex._im > 0) return os << " + " << complex._im << " * i";
             if (complex._im < 0) return os << " - " << -complex._im << " * i";
-            return os << " " << complex._im.GetSqrt();
+            return os << " " << complex._im << " * i";
     }
 };
