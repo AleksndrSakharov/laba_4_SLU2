@@ -36,4 +36,5 @@ void SLU2::countAnswer(){
                 std::cout << "x2 = " << _x2 << " / " << 2.0 * _a << std::endl;
             }
         }
+        return;
 }

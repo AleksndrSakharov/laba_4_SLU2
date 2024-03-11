@@ -1,3 +1,3 @@
-D:/PROGA/Proga/C++/laba_4_SLU2/build/CMakeFiles/main.dir
-D:/PROGA/Proga/C++/laba_4_SLU2/build/CMakeFiles/edit_cache.dir
-D:/PROGA/Proga/C++/laba_4_SLU2/build/CMakeFiles/rebuild_cache.dir
+/home/s23380346@unn.global/Sakharov/3823B1FI3/laba_4_SLU2/build/CMakeFiles/main.dir
+/home/s23380346@unn.global/Sakharov/3823B1FI3/laba_4_SLU2/build/CMakeFiles/edit_cache.dir
+/home/s23380346@unn.global/Sakharov/3823B1FI3/laba_4_SLU2/build/CMakeFiles/rebuild_cache.dir
