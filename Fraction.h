@@ -19,21 +19,15 @@ public:
             _denominator = 1;
             _numerator = 0;
         }else{
-            int32_t flag = 1;
-            if (Res < 0){
-                flag = -1;
-                Res *= flag;
-            }
-            uint32_t denom = 1;
-            int16_t count = 0;
-            while (fmod(Res, 1) != 0 && count < 15){
+            const int MAX_DENOMINATOR = 100000;
+            int multiplier = 1;
+            while (Res != static_cast<int>(Res)) {
                 Res *= 10;
-                count++;
+                multiplier *= 10;
+                if (multiplier >= MAX_DENOMINATOR) break;
             }
-            denom = pow(10, count);
-            Res *= flag;
-            _numerator = Res;
-            _denominator = denom;
+            _numerator = static_cast<int>(Res);
+            _denominator = multiplier;
             MethodSocr(); 
             }
     };
@@ -44,23 +38,17 @@ public:
             _denominator = 1;
             _numerator = 0;
         }else{
-            int32_t flag = 1;
-            if (Res < 0){
-                flag = -1;
-                Res *= flag;
-            }
-            uint32_t denom = 1;
-            int16_t count = 0;
-            while (fmod(Res, 1) != 0 && count < 15){
+            const int MAX_DENOMINATOR = 100000;
+            int multiplier = 1;
+            while (Res != static_cast<int>(Res)) {
                 Res *= 10;
-                count++;
+                multiplier *= 10;
+                if (multiplier >= MAX_DENOMINATOR) break;
             }
-            denom = pow(10, count);
-            Res *= flag;
-            _numerator = Res;
-            _denominator = denom;
-            MethodSocr(); 
-            }
+            _numerator = static_cast<int>(Res);
+            _denominator = multiplier;
+            MethodSocr();
+        }
     };
 
     Fraction(int32_t numerator, uint32_t denominator, double SQRT){

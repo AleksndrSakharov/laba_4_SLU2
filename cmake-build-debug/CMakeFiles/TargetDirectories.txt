@@ -1,0 +1,3 @@
+D:/PROGA/Proga/C++/laba_4_SLU2/cmake-build-debug/CMakeFiles/main.dir
+D:/PROGA/Proga/C++/laba_4_SLU2/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/PROGA/Proga/C++/laba_4_SLU2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

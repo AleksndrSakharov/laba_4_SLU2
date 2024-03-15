@@ -3,12 +3,13 @@
 void Fraction::MethodSocr(){
     int32_t numerator = abs(_numerator), denominator = _denominator;
     if (numerator == 0 || denominator == 0) return;
-    while (numerator != denominator || numerator < 0 || denominator < 0){
-        if (numerator > denominator) numerator -= denominator;
-        else denominator -= numerator;
+    while (denominator != 0 || numerator < 0){
+        int32_t tmp = denominator;
+        denominator = numerator % denominator;
+        numerator = tmp;
     }
     _numerator /= numerator;
-    _denominator /= denominator;
+    _denominator /= numerator;
 }
 
 void Fraction::SetDenominator(uint32_t new_denominator){

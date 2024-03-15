@@ -1,0 +1,18 @@
+# ninja log v5
+6	86	7321405400075488	CMakeFiles/main.dir/Complex.cpp.obj	9ca8d051abb32b17
+0	454	7321405403767203	CMakeFiles/main.dir/main.cpp.obj	1eb6c539c823df86
+11	462	7321405403847840	CMakeFiles/main.dir/SLU2.cpp.obj	d41b18a3f0e1977c
+18	468	7321405403912959	CMakeFiles/main.dir/Fraction.cpp.obj	a4887a84910708ac
+468	595	7321405405142039	main.exe	4e9710b30443f274
+8	633	7321931026215578	CMakeFiles/main.dir/Fraction.cpp.obj	a4887a84910708ac
+3	634	7321931026215578	CMakeFiles/main.dir/main.cpp.obj	1eb6c539c823df86
+12	639	7321931026285459	CMakeFiles/main.dir/SLU2.cpp.obj	d41b18a3f0e1977c
+639	821	7321931028069388	main.exe	4e9710b30443f274
+2	425	7321932156793218	CMakeFiles/main.dir/main.cpp.obj	1eb6c539c823df86
+7	426	7321932156793218	CMakeFiles/main.dir/Fraction.cpp.obj	a4887a84910708ac
+12	459	7321932157135865	CMakeFiles/main.dir/SLU2.cpp.obj	d41b18a3f0e1977c
+459	528	7321932157811259	main.exe	4e9710b30443f274
+3	379	7321935707466298	CMakeFiles/main.dir/main.cpp.obj	1eb6c539c823df86
+11	390	7321935707591513	CMakeFiles/main.dir/Fraction.cpp.obj	a4887a84910708ac
+15	393	7321935707616507	CMakeFiles/main.dir/SLU2.cpp.obj	d41b18a3f0e1977c
+393	462	7321935708280195	main.exe	4e9710b30443f274
