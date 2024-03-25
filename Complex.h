@@ -20,6 +20,22 @@ public:
         return *this;
     }
 
+    Complex operator*(double x){
+        Fraction re = _re * x;
+        // Fraction im = _im * x;
+        return Complex(re, _im);
+    }
+
+    bool operator>(double x){
+        if (_re.GetDouble() > x) return true;
+        return false;
+    }
+
+    bool operator<(double x){
+        if (_re.GetDouble() < x) return true;
+        return false;
+    }
+
 
 
     friend std::ostream& operator<<(std::ostream &os, const Complex &complex)

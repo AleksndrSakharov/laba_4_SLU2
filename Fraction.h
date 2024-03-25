@@ -100,13 +100,18 @@ public:
 
     friend std::ostream& operator<<(std::ostream &os, const Fraction &fraction)
     {
-        if (fraction._sqrt == 0) return os << fraction._numerator << "/" << fraction._denominator;
+        if (fraction._sqrt == 0){
+            if (fraction._denominator == 1) return os << fraction._numerator;
+            return os << fraction._numerator << "/" << fraction._denominator;
+        } 
         else if (fraction._sqrt < 0){
             if (fraction._numerator == 0) return os << " - sqrt(" << -fraction._sqrt << ")";
+            if (fraction._denominator == 1) return os << fraction._numerator << " - sqrt(" << -fraction._sqrt << ")";
             return os << fraction._numerator << "/" << fraction._denominator << " - sqrt(" << -fraction._sqrt << ")";
         } 
         else{
             if (fraction._numerator == 0) return os << " + sqrt(" << fraction._sqrt << ")";
+            if (fraction._denominator == 1) return os << fraction._numerator << " + sqrt(" << -fraction._sqrt << ")";
             return os << fraction._numerator << "/" << fraction._denominator << " + sqrt(" << fraction._sqrt << ")";
         } 
     }
